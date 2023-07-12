@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>City Home</title>
+    <script src="City.js"></script>
+    <script src="../jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="City.css">
+
+</head>
+<body onload="findAll()">
+<h1 style="text-align: center"> Home</h1>
+<div class="container">
+    <div id="list" class="list"></div>
+    <div id="page"></div>
+</div>
+
+<div id="create" >
+    <h1>Create form</h1>
+    <table>
+        <tr>
+            <td><label for="name">Tên</label></td>
+            <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+            <td><label >Nation</label></td>
+            <td id="selectClasses"></td>
+        </tr>
+        <tr>
+            <td><label for="area">Diện tích</label></td>
+            <td><input type="text" id="area"></td>
+        </tr>
+        <tr>
+            <td><label for="people">Dân số</label></td>
+            <td><input type="text" id="people"></td>
+        </tr>
+        <tr>
+            <td><label for="gdp">GDP</label></td>
+            <td><input type="text" id="gdp"></td>
+        </tr>
+        <tr>
+            <td><label for="introduce">Giới thiệu</label></td>
+            <td><input type="text" id="introduce"></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="create()" >Create</button></td>
+        </tr>
+    </table>
+</div>
+
+<div id="update">
+    <h1>Update form</h1>
+    <table>
+        <tr>
+            <td><label for="name-u">Tên</label></td>
+            <td><input type="text" id="name-u"></td>
+        </tr>
+        <tr>
+            <td><label >Nation</label></td>
+            <td id="selectClassesUpdate"></td>
+        </tr>
+        <tr>
+            <td><label for="area-u">Diện tích</label></td>
+            <td><input type="text" id="area-u"></td>
+        </tr>
+        <tr>
+            <td><label for="people-u">Dân số</label></td>
+            <td><input type="text" id="people-u"></td>
+        </tr>
+        <tr>
+            <td><label for="gdp-u">GDP</label></td>
+            <td><input type="text" id="gdp-u"></td>
+        </tr>
+        <tr>
+            <td><label for="introduce-u">Giới thiệu</label></td>
+            <td><input type="text" id="introduce-u"></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="update()" >Update</button></td>
+        </tr>
+    </table>
+</div>
+<div id="views"></div>
+</body>
+</html>
